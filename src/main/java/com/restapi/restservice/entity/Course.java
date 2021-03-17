@@ -9,13 +9,13 @@ public class Course {
 	@Id
 	private long id;
 	private String name;
-	private String desc;
+	private String description;
 	
-	public Course(long id, String name, String desc) {
+	public Course(long id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.desc = desc;
+		this.description = description;
 	}
 	public Course() {
 		super();
@@ -33,14 +33,14 @@ public class Course {
 		this.name = name;
 	}
 	public String getDesc() {
-		return desc;
+		return description;
 	}
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDesc(String description) {
+		this.description = description;
 	}
 	@Override
 	public String toString() {
-		return "Course [id=" + id + ", name=" + name + ", desc=" + desc + "]";
+		return "Course [id=" + id + ", name=" + name + ", desc=" + description + "]";
 	}
 	
 	
